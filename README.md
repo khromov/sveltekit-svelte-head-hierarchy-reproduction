@@ -1,3 +1,7 @@
+# Repro
+
+When navigating to http://localhost:3000/blog we expect to see the title "Blog" and this is indeed what is shown if you navigate client side and in the SSR. But if you navigate directly to `/blog`, hydration will for some reason use the title from +layout.svelte whish is "My site".
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
